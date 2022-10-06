@@ -8,6 +8,7 @@ public class TestForCiCdApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(TestForCiCdApplication.class, args);
+
     }
 
 }
