@@ -1,4 +1,4 @@
-package com.example.testforcicd;
+package com.example.testforcicd.controller;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
