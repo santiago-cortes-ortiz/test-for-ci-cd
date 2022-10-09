@@ -120,13 +120,13 @@ jobs:
             name: artifact
         #Deploy the artifact (JAR) into AWS Beanstalk
         - name: Deploy to EB
-          uses: Admin/beanstalk-deploy@v13
+          uses: actions/checkout@v1
           with:
             aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
             use_existing_version_if_available: false
             application_name: test-ci-cd-deploy
-            environment_name: testcicddeploy-env
+            environment_name: Testcicddeploy-env
             version_label: ${{github.SHA}}
             region: us-east-1
             deployment_package: test-for-ci-cd-0.0.1-SNAPSHOT.jar
